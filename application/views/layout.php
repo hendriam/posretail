@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>POS RETAIL | HOME</title>
+    <title>POS RETAIL | <?php echo $title; ?></title>
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo base_url();?>assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- MetisMenu CSS -->
@@ -53,15 +53,11 @@
         <div class="navbar-default sidebar" role="navigation">
             <div class="sidebar-nav navbar-collapse">
                 <ul class="nav" id="side-menu">
-                    <li><a href="<?php echo base_url();?>" class="active"><i class="fa fa-home fa-fw"></i> HOME</a></li>
-                    <li><a href="<?php echo base_url();?>"><i class="fa fa-cubes fa-fw"></i> BARANG</a></li>
-                    <li>
-                        <a href="#"><i class="fa fa-sitemap fa-fw"></i> TRANSAKSI<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li><a href="<?php echo base_url();?>">PEMBELIAN</a></li>
-                            <li><a href="<?php echo base_url();?>">PENJUALAN</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="<?php echo base_url();?>home" class="active"><i class="fa fa-home fa-fw"></i> Home</a></li>
+                    <li><a href="<?php echo base_url();?>home" ><i class="fa fa-home fa-fw"></i> Pengguna</a></li>
+                    <li><a href="<?php echo base_url();?>barang"><i class="fa fa-cubes fa-fw"></i> Barang</a></li>
+                    <li><a href="<?php echo base_url();?>pembelian"><i class="fa fa-cubes fa-fw"></i> Pembelian</a></li>
+                    <li><a href="<?php echo base_url();?>penjualan"><i class="fa fa-cubes fa-fw"></i> Penjualan</a></li>
                 </ul>
             </div>
         </div>
@@ -71,7 +67,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Page Title</h1>
+                    <h2 class="page-header"><?php echo $title; ?></h2>
                 </div>
             </div>
             <!-- ... Your content goes here ... -->
