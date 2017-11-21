@@ -7,6 +7,7 @@
 body {
     background-color: #f8f8f8;
     font-family: 'Merriweather', serif;
+    color: #393939;
 }
 
 #wrapper {
@@ -20,6 +21,18 @@ body {
     background-color: #fff;
 }
 
+.jumbotron{
+    border-radius: 0;
+}
+
+.panel{
+    border-radius: 0!important
+}
+
+.panel .panel-heading{
+    font-size: 14pt;
+}
+
 @media(min-width:768px) {
     #page-wrapper {
         position: inherit;
@@ -30,7 +43,24 @@ body {
 }
 .navbar{
     background: #438EB9;
-    height: 30px;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    border-width: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    min-height: 45px;
+}
+.navbar .navbar-brand{
+    color: #fff;
+    font-size: 20px;
+    text-shadow: none;
+    height: auto
+}
+
+#logopos{
+
 }
 
 .navbar-header {
@@ -63,12 +93,12 @@ body {
 }
 
 .navbar-top-links>li>a {
-    color: #999;
+    color: #fff;
 }
 
 .navbar-top-links>li>a:hover, .navbar-top-links>li>a:focus, .navbar-top-links>.open>a, .navbar-top-links>.open>a:hover, .navbar-top-links>.open>a:focus {
     color: #fff;
-    background-color: #222;
+    background: #408EB9;
 }
 
 .navbar-top-links .dropdown-menu li {
@@ -129,10 +159,18 @@ body {
 .sidebar ul li a {
     height: 50px;
     padding: 15px 10px 0px 20px;
+    color: #393939;
+    font-size: 12pt;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .sidebar ul li a.active {
     background-color: #eee;
+}
+
+.sidebar ul li a i {
+    font-size: 20px;
+    margin-right: 10px;
 }
 
 .sidebar .arrow {

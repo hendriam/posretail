@@ -20,6 +20,7 @@
     <!-- Custom Fonts -->
     <link href="<?php echo base_url();?>assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -32,7 +33,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="navbar-header">
-            <a class="navbar-brand" href="<?php echo base_url();?>">POS RETAIL <i class="fa fa-home fa-fw"></i></a>
+            <a class="navbar-brand" href="<?php echo base_url();?>">Pos Retail <i id="logopos" class="fa fa-home fa-fw"></i></a>
         </div>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -50,7 +51,7 @@
                     <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a></li>
                     <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a></li>
                     <li class="divider"></li>
-                    <li><a href="#"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
+                    <li><a href="<?php echo base_url(); ?>login"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
                 </ul>
             </li>
         </ul>
@@ -61,6 +62,8 @@
                     <li><a href="<?php echo base_url();?>dashboard"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a></li>
                     <li><a href="<?php echo base_url();?>pengguna"><i class="fa fa-users fa-fw"></i> Pengguna</a></li>
                     <li><a href="<?php echo base_url();?>barang"><i class="fa fa-cubes fa-fw"></i> Barang</a></li>
+                    <li><a href="<?php echo base_url();?>penjualan"><i class="fa fa-shopping-basket fa-fw"></i> Penjualan</a></li>
+                    <li><a href="<?php echo base_url();?>pembelian"><i class="fa fa-shopping-cart fa-fw"></i> Pembelian</a></li>
                 </ul>
             </div>
         </div>
@@ -91,7 +94,7 @@
 <script>
     $(document).ready(function() {
         $('#dataTables-example').DataTable({
-            responsive: true
+            responsive: true,
         });
     });
 </script>
