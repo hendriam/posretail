@@ -33,7 +33,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="navbar-header">
-            <a class="navbar-brand" href="<?php echo base_url();?>">Pos Retail <i id="logopos" class="fa fa-home fa-fw"></i></a>
+            <a class="navbar-brand" href="<?php echo base_url();?>">Pos Retail Maju Sejahtera <i id="logopos" class="fa fa-home fa-fw"></i></a>
         </div>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -61,6 +61,7 @@
                 <ul class="nav" id="side-menu">
                     <li><a href="<?php echo base_url();?>dashboard"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a></li>
                     <li><a href="<?php echo base_url();?>pengguna"><i class="fa fa-users fa-fw"></i> Pengguna</a></li>
+                    <li><a href="<?php echo base_url();?>supplier"><i class="fa fa-user fa-fw"></i> Supplier</a></li>
                     <li><a href="<?php echo base_url();?>barang"><i class="fa fa-cubes fa-fw"></i> Barang</a></li>
                     <li><a href="<?php echo base_url();?>penjualan"><i class="fa fa-shopping-basket fa-fw"></i> Penjualan</a></li>
                     <li><a href="<?php echo base_url();?>pembelian"><i class="fa fa-shopping-cart fa-fw"></i> Pembelian</a></li>

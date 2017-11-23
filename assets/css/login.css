@@ -1,11 +1,11 @@
 body{
-		background-color: #DFE0E2;
+	background-color: #DFE0E2;
     font-family: 'Merriweather', serif;
     padding-top: 10px;
 }
 
 .login-container{
-	  width: 375px;
+	width: 375px;
     margin: 0 auto;
     color: #777777;
 }
@@ -18,7 +18,7 @@ body{
     border-bottom: 1px solid rgba(50, 50, 50, .33)
 }
 .header {
-		color: #4C91C9;
+	color: #4C91C9;
     line-height: 28px;
     margin-bottom: 16px;
     margin-top: 18px;
