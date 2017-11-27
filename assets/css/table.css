@@ -1,0 +1,52 @@
+#tblformbarang, #tblformpemasok, #formpengguna{
+	border-collapse: collapse;
+	font-size: 9pt;
+}
+
+#tblformbarang tr td, #tblformpemasok tr td, #formpengguna tr td {
+	padding-bottom: 3px;
+}
+
+#datatablebarang tr th{
+	background: #438EB9;
+	color: #fff;
+	font-weight: normal;
+}
+
+#datatablepengguna tr th{
+	background: #438EB9;
+	color: #fff;
+	font-weight: normal;
+}
+
+#tblformpenerimaan1{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+#tblformpenerimaan1 tr td{
+	padding-bottom: 2px;
+}
+
+#tblformpenerimaan2 tr th{
+	background: #438EB9;
+	color: #fff;
+	font-weight: normal;
+}
+
+#tblformpenerimaan3{
+	border-bottom: 1px solid #438EB9;
+}
+
+#tblformpenerimaan3 tr th{
+	background: #eee;
+	font-weight: normal;
+}
+
+#tblformpenerimaan4{
+	width: 100%;
+}
+
+#tblformpenerimaan4 tr td{
+	padding-bottom: 2px;
+}

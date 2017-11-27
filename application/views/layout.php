@@ -12,15 +12,20 @@
     <!-- MetisMenu CSS -->
     <link href="<?php echo base_url();?>assets/css/metisMenu.min.css" rel="stylesheet">
     <!-- DataTables CSS -->
-    <link href="<?php echo base_url();?>assets/css/dataTables/dataTables.bootstrap.css" rel="stylesheet">
-    <!-- DataTables Responsive CSS -->
-    <link href="<?php echo base_url();?>assets/css/dataTables/dataTables.responsive.css" rel="stylesheet">
+    <link href="<?php echo base_url() ?>assets/css/dataTables/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url() ?>assets/css/dataTables/buttons.bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="<?php echo base_url();?>assets/css/startmin.css" rel="stylesheet">
+    <link href="<?php echo base_url();?>assets/css/table.css" rel="stylesheet">
     <!-- Custom Fonts -->
     <link href="<?php echo base_url();?>assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <!-- Jquery -->
+    <link href="<?php echo base_url();?>assets/autocomplete/jquery-ui.css" rel="stylesheet">
+    <script src="<?php echo base_url();?>assets/autocomplete/jquery-1.12.4.js"></script>
+    <script src="<?php echo base_url();?>assets/autocomplete/jquery-ui.js"></script>
+    <!-- <script src="<?php echo base_url();?>assets/js/jquery.min.js"></script> -->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -60,11 +65,22 @@
             <div class="sidebar-nav navbar-collapse">
                 <ul class="nav" id="side-menu">
                     <li><a href="<?php echo base_url();?>dashboard"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a></li>
-                    <li><a href="<?php echo base_url();?>pengguna"><i class="fa fa-users fa-fw"></i> Pengguna</a></li>
-                    <li><a href="<?php echo base_url();?>supplier"><i class="fa fa-user fa-fw"></i> Supplier</a></li>
                     <li><a href="<?php echo base_url();?>barang"><i class="fa fa-cubes fa-fw"></i> Barang</a></li>
                     <li><a href="<?php echo base_url();?>penjualan"><i class="fa fa-shopping-basket fa-fw"></i> Penjualan</a></li>
-                    <li><a href="<?php echo base_url();?>pembelian"><i class="fa fa-shopping-cart fa-fw"></i> Pembelian</a></li>
+                    <li><a href="#"><i class="fa fa-th fa-fw"></i>Master Data<span class="fa arrow"></span></a>
+                        <ul class="nav nav-third-level">
+                            <li><a href="<?php echo base_url();?>pemasok"><i class="fa fa-user fa-fw"></i>Pemasok</a></li>
+                            <li><a href="<?php echo base_url();?>pengguna"><i class="fa fa-users fa-fw"></i> Pengguna</a></li>
+                            <li><a href="<?php echo base_url();?>jenis"><i class="fa fa-list fa-fw"></i>Jenis Barang</a></li>
+                            <li><a href="<?php echo base_url();?>satuan"><i class="fa fa-list fa-fw"></i>Satuan Barang</a></li>
+                        </ul>
+                    <li>
+                        <a href="#"><i class="fa fa-shopping-cart fa-fw"></i>Pembelian <span class="fa arrow"></span></a>
+                        <ul class="nav nav-third-level">
+                            <li><a href="penerimaan"><i class="fa fa-edit fa-fw"></i>Penerimaan</a></li>
+                            <li><a href="pelunasan"><i class="fa fa-files-o fa-fw"></i>Pelunasan</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -78,24 +94,18 @@
     </div>
 </div>
 
-<!-- jQuery -->
-<script src="<?php echo base_url();?>assets/js/jquery.min.js"></script>
-<!-- Bootstrap Core JavaScript -->
-<script src="<?php echo base_url();?>assets/js/bootstrap.min.js"></script>
-<!-- DataTables JavaScript -->
-<script src="<?php echo base_url();?>assets/js/dataTables/jquery.dataTables.min.js"></script>
-<script src="<?php echo base_url();?>assets/js/dataTables/dataTables.bootstrap.min.js"></script>
-<!-- Metis Menu Plugin JavaScript -->
-<script src="<?php echo base_url();?>assets/js/metisMenu.min.js"></script>
-<!-- Custom Theme JavaScript -->
-<script src="<?php echo base_url();?>assets/js/startmin.js"></script>
+    <!-- jQuery -->
+    <!-- Bootstrap Core JavaScript -->
+    <script src="<?php echo base_url();?>assets/js/bootstrap.min.js"></script>
+    <!-- DataTables JavaScript -->
+    <script src="<?php echo base_url(); ?>assets/js/dataTables/jquery.dataTables.min.js" type="text/javascript"></script>
+    <script src="<?php echo base_url(); ?>assets/js/dataTables/dataTables.bootstrap.min.js" type="text/javascript"></script>
+    <script src="<?php echo base_url(); ?>assets/js/dataTables/dataTables.buttons.min.js" type="text/javascript"></script>
+    <script src="<?php echo base_url(); ?>assets/js/dataTables/buttons.bootstrap.min.js" type="text/javascript"></script>
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="<?php echo base_url();?>assets/js/metisMenu.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="<?php echo base_url();?>assets/js/startmin.js"></script>
 
 </body>
 </html>
-<script>
-    $(document).ready(function() {
-        $('#dataTables-example').DataTable({
-            responsive: true,
-        });
-    });
-</script>

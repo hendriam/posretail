@@ -1,6 +1,6 @@
 <div class="row">
 	<div class="col-md-12">
-		<span class="title-content">Pembelian</span>
+		<span class="title-content">Buat Faktur</span>
 		<hr class="line">
 	</div>
 </div>

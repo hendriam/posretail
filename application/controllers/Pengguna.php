@@ -9,9 +9,14 @@ class Pengguna extends CI_Controller {
 		$this->load->view('layout', $data	);
 	}
 
+	public function get_pengguna(){
+		$this->load->model('Pengguna_m');
+		$data['pengguna'] = $this->Pengguna_m->get_data_pengguna();
+		$this->load->view('pengguna/table_pengguna', $data	);
+	}
+
 	public function add_pengguna(){
-		$data['title'] = 'Tambah Pengguna';
-		$data['content'] = 'pengguna/page_add_pengguna';
-		$this->load->view('layout', $data	);		
+		$this->load->model('Pengguna_m');
+		$this->Pengguna_m->store_data_pengguna();
 	}
 }
